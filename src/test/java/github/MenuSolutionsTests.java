@@ -18,7 +18,7 @@ public class MenuSolutionsTests {
     }
 
     @Test
-    void openEnterprisesPage() {
+    void openEnterprisesPageTest() {
         open(baseUrl);
         $(".HeaderMenu-nav").$(byText("Solutions")).hover();
         $(".HeaderMenu-item", 1).$(byText("Enterprises")).click();
